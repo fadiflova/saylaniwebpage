@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  box-sizing: border-box;
+}
+header .top-navbar {
+  display: flex;
+  justify-content: space-around;
+  background: rgb(49, 109, 195);
+  padding: 8px 65px;
+  align-items: center;
+}
+.top-navbar .sm {
+  flex: 1;
+}
+.top-navbar .sm a,
+.footer-top .social-media .sm a {
+  color: white;
+  padding: 0 8px;
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+}
+.top-navbar .sm a:hover {
+  color: black;
+  background: white;
+}
+.top-navbar .sm #whatsapp {
+  background: rgb(101, 188, 84);
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+header .top-navbar-text {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  flex: 2;
+  text-align: center;
+}
+header .buttons {
+  text-align: right;
+  flex: 1;
+}
+header .buttons button {
+  color: green;
+  padding: 4px;
+  border-radius: 10px;
+}
+header .main-navbar {
+  display: flex;
+
+  justify-content: space-between;
+  padding: 10px 65px;
+  background: rgb(247, 248, 250);
+  height: 50px;
+}
+.main-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.header .header-banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-navbar .brand-logo img {
+  width: 200px;
+}
+.menu-button {
+  font-size: 40px;
+  display: none;
+}
+.main-navbar-menu-items {
+  display: flex;
+  /* align-items: center; */
+}
+.main-navbar-menu-items li a {
+  margin-left: 10px;
+  line-height: 45px;
+  font-size: 13px;
+  font-weight: 700;
+  color: black;
+  padding: 12px 20px;
+  align-items: center;
+  transition: 0.5s ease;
+}
+.main-navbar-menu-items a.active,
+.main-navbar-menu-items li:hover a {
+  background: rgb(49, 109, 195);
+  border-radius: 20px;
+  color: white;
+}
+.container .container-title h1,
+.saylani-services .saylani-services-title h2,
+.image-gallery h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(49, 109, 195);
+  font-weight: 900;
+}
+.marquee-text {
+  line-height: 30px;
+  text-align: center;
+  background: rgb(49, 109, 195);
+}
+.marquee {
+  /* z-index: 0; */
+}
+.container,
+.saylani-services,
+.upcoming-projects-events {
+  padding: 60px 0;
+}
+.container .container-title h1 {
+  color: rgb(61, 118, 198);
+}
+.favicon {
+  text-align: center;
+}
+.favicon img {
+  width: 40px;
+  padding-top: 10px;
+}
+.container .container-text {
+  text-align: justify;
+  padding: 30px 80px;
+  margin: 0 55px;
+}
+.container .container-text .text {
+  display: inline-block;
+  padding-bottom: 30px;
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  line-height: 27px;
+}
+mark {
+  color: rgb(66, 121, 0);
+  background: none;
+}
+.section-stats {
+  display: flex;
+  flex-wrap: wrap;
+
+  background: rgb(38, 85, 232);
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  padding: 55px 0;
+}
+.section-stats .stat img {
+  width: 15%;
+  display: block;
+  margin: 0 auto;
+}
+.section-stats .stat .stat-content {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+.section-stats .stat {
+  transition: all 0.5s ease;
+}
+.section-stats .stat:hover {
+  transform: scale(1.2);
+  box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.section-stats .stat .stat-content .value {
+  font-size: 60px;
+  font-weight: 500;
+  font-family: "Baloo Bhaina 2", cursive;
+  line-height: 80px;
+}
+
+.section-stats .stat .stat-content .type {
+  font-weight: 700;
+}
+.section-stats .stat .stat-content .type #day {
+  color: rgb(6, 227, 38);
+}
+.saylani-services {
+  background: rgb(247, 248, 250);
+}
+.saylani-services-cards .row {
+  display: flex;
+  flex-wrap: wrap;
+
+  /* justify-content: space-evenly; */
+  /* justify-content: flex-start; */
+  justify-content: space-around;
+
+  padding-top: 30px;
+  line-height: 40px;
+  text-align: center;
+  background: rgb(247, 248, 250);
+}
+.saylani-services-cards .row .card {
+  border: 1px solid white;
+  width: 300px;
+  height: 150px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: white;
+  box-shadow: 0px 1px 10px 1px rgba(212, 209, 209, 0.75);
+  transition: 0.5s ease;
+  margin: 20px;
+}
+.saylani-services-cards .row .card:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 5px 2px 0px rgba(190, 187, 187, 0.75);
+}
+.upcoming-projects-events {
+  display: flex;
+  flex-wrap: wrap;
+}
+.upcoming-projects-events h3 {
+  text-transform: uppercase;
+  color: rgb(49, 109, 195);
+  font-size: 28px;
+  font-weight: 700;
+}
+.upcoming-projects-events .upcoming-projects {
+  display: flex;
+  flex-wrap: wrap;
+
+  flex: 2;
+  flex-direction: column;
+  padding-left: 50px;
+}
+.upcoming-projects-events .upcoming-events {
+  flex: 1;
+}
+.upcoming-projects .upcoming-projects-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.upcoming-projects-content .projects-row,
+.upcoming-events .upcoming-events-marquee {
+  padding-top: 30px;
+}
+.upcoming-projects-content .projects-content {
+  display: flex;
+  flex-wrap: wrap;
+
+  border: 1px solid rgba(230, 230, 231, 0.692);
+  width: 300px;
+  /* height: 15px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: white;
+  /* box-shadow: 0px 1px 10px 1px rgba(148, 147, 147, 0.75); */
+  transition: 0.5s ease;
+  margin: 0 25px 20px 0px;
+  text-transform: uppercase;
+  background: rgba(230, 230, 231, 0.692);
+  align-items: center;
+}
+.upcoming-projects-content .projects-content p {
+  padding-left: 20px;
+}
+.image-gallery .image-gallery-imgs {
+  display: flex;
+  padding: 100px 50px;
+}
+.image-gallery .image-gallery-imgs div {
+  padding: 5px;
+}
+.image-gallery .image-gallery-imgs img:hover {
+  transform: scale(1.2);
+}
+footer .footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(37, 39, 46);
+  color: white;
+  padding: 80px 20px;
+  justify-content: space-evenly;
+}
+.footer-top .footer-top-info {
+  color: rgba(229, 226, 226, 0.685);
+  line-height: 30px;
+  font-size: 14px;
+  text-align: justify;
+}
+.footer-top .footer-top-info p {
+  padding-top: 20px;
+}
+.footer-top .footer-top-info ul i {
+  color: green;
+  padding-right: 10px;
+}
+.footer-top .social-media h4 {
+  padding-bottom: 20px;
+}
+
+.footer-top .social-media .footer-sm a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+}
+
+footer .copyright {
+  background: rgb(49, 109, 195);
+  height: 10px;
+  align-items: center;
+  padding: 20px 0px;
+  text-align: center;
+  color: white;
+}
+.footer-top .useful-link {
+  border-bottom: 1px solid white;
+}
+
+.line {
+  display: inline-block;
+  width: 40px;
+  border-bottom: 2px solid #427900;
+}
+.dropdown-content {
+  /* display: none; */
+  position: absolute;
+  display: inline-block;
+}
+
+/* // Medium devices (tablets, less than 992px) */
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  header .main-navbar {
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+  }
+  .main-navbar .brand-logo {
+    margin: auto;
+  }
+  .main-navbar-menu-items {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .main-navbar-menu-items {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+  .main-navbar-menu-items-active {
+    display: block;
+    text-align: center;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    top: 120px;
+  }
+  .menu-button {
+    display: block;
+  }
+  header .main-navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+  header .top-navbar {
+    flex-direction: column;
+  }
+  .top-navbar-text {
+    margin: 10px 0;
+  }
+  .container .container-text {
+    padding: 20px;
+    margin: 0;
+  }
+  .section-stats .stat {
+    margin: 20px 0;
+  }
+  .upcoming-projects-events {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .image-gallery .image-gallery-imgs {
+    display: block;
+  }
+ 
+}
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
